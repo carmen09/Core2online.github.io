@@ -5,7 +5,7 @@ var base = new Airtable({ apiKey: "keymS2olAIhZo74QZ" }).base(
   "appiRsP2eefs4rjeE"
 );
 //get the "books" table from the base, select ALL the records, and specify the functions that will receive the data
-base("carmen").select({}).eachPage(gotPageOfArts, gotAllArts);
+base("artwork").select({}).eachPage(gotPageOfArts, gotAllArts);
 // an empty array to hold our book data
 const arts = [];
 // callback function that receives our data
@@ -18,21 +18,19 @@ function gotPageOfArts(records, fetchNextPage) {
 }
 // call back function that is called when all pages are loaded
 function gotAllArts(err) {
-  console.log("gotAllArts()");
-  // report an error, you'd want to do something better than this in production
-  if (err) {
-    console.log("error loading data");
-    console.error(err);
-    return;
-  }
-  // call functions to log and show the books
-  consoleLogArts();
-  try {
+    console.log("gotAllArts()");
+  
+    // report an error, you'd want to do something better than this in production
+    if (err) {
+      console.log("error loading data");
+      console.error(err);
+      return;
+    }
+  
+    // call functions to log and show the books
+    consoleLogArts();
     showArts();
-  } catch (e) {
-    console.error(e);
   }
-}
 // just loop through the books and console.log them
 function consoleLogArts() {
   console.log("consoleLogArts()");
@@ -49,10 +47,7 @@ function showArts() {
     artContainer.classList.add("art-container");
     document.querySelector(".container").append(artContainer);
     // creating image and adding it to the art container
-    var artImage = document.createElement("img");
-    artImage.classList.add("art-image");
-    artImage.src = art.fields.noimage[0].url;
-    artContainer.append(artImage);
+
     // var artContainer = document.createElement("div");
     // artContainer.classList.add("art-container");
     // document.querySelector(".container").append(artContainer);
@@ -66,17 +61,16 @@ function showArts() {
     artOrigin.innerText = art.fields.link;
     artContainer.append(artOrigin);
     // add description to container
-   
+  
     // open and close container when clicked
     artContainer.addEventListener("click", function (event) {
-      artDescription.classList.toggle("active");
-      artImage.classList.toggle("active");
+
       artOrigin.classList.toggle("active");
     });
     // add genders as classes to each container
-    var artGender = art.fields.status;
-    artGender.forEach(function (status) {
-      artContainer.classList.add(status);
+    var artGender = art.fields.genre;
+    artGender.forEach(function (genre) {
+      artContainer.classList.add(genre);
     });
     //add event listener to our filter
     //to add an active class to our song
@@ -100,3 +94,5 @@ function showArts() {
     });
   });
 }
+
+

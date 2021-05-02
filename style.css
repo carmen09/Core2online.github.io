@@ -145,15 +145,7 @@ body {
     }
   
   
-  .art-description.active {
-    display: block;
-  }
-  .art-description{
-    font-size: 20px;
-    color:white;
-    font-family: Helvetica;
-    display: none;
-  }
+
   .art-origin {
     font-size: 25px;
     color:black;
@@ -167,17 +159,7 @@ body {
     font-size: 70px;
   }
   
-  .art-image {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    height: auto;
-    display: none;
-  }
-  .art-image.active {
-    display: block;
-  }
-  
+
   .art-container {
     width: 100%;
     font-family: "GameMusic";
@@ -218,16 +200,7 @@ body {
       }
     }
   
-  .image-container {
-    width: 400px;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    color: violet;
-  
-  
-  }
+
   .filter {
     padding: 6rem;
     cursor: pointer;
@@ -282,7 +255,7 @@ body {
     color: #50bfe6;
     text-shadow: 2px 2px #ffff66;
   }
-  .npc-button{
+  .lab-button{
     position: fixed;
     background-color: #b91567;
     width: 200px;
@@ -291,7 +264,7 @@ body {
     border-radius: 50%;
    
   }
-  .leader-button{
+  .studio-button{
     position: fixed;
     background-color: #b91567;
     width: 300px;
@@ -306,7 +279,5 @@ body {
   .art-origin {
     font-size: 20px;
   }
-  .art-description{
-    font-size: 15px;
-  }
+ 
   }
