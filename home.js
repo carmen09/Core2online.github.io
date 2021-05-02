@@ -68,31 +68,31 @@ function showArts() {
       artOrigin.classList.toggle("active");
     });
     // add genders as classes to each container
-    var artGender = art.fields.genre;
-    artGender.forEach(function (genre) {
+    // var artGener = art.fields.genre;
+    // artGener.forEach(function (genre) {
       artContainer.classList.add(genre);
     });
     //add event listener to our filter
     //to add an active class to our song
     //add event listener to our filter
     //to add an active class to our song
-    var filterMale = document.querySelector(".studio-button");
-    filterMale.addEventListener("click", function () {
+    var filterStudio = document.querySelector(".studio-button");
+    filterStudio.addEventListener("click", function () {
       if (artContainer.classList.contains("studio")) {
         artContainer.style.display = "block";
       } else {
         artContainer.style.display = "none";
       }
     });
-    var filterFemale = document.querySelector(".lab-button");
-    filterFemale.addEventListener("click", function () {
+    var filterLab = document.querySelector(".lab-button");
+    filterLab.addEventListener("click", function () {
       if (artContainer.classList.contains("lab")) {
         artContainer.style.display = "block";
       } else {
         artContainer.style.display = "none";
       }
     });
-  });
+//   });
 }
 
 
