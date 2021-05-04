@@ -64,7 +64,7 @@ function showArts() {
   
     // open and close container when clicked
     artContainer.addEventListener("click", function (event) {
-
+window.location.href = art.fields.link;
       artOrigin.classList.toggle("active");
     });
     // add genders as classes to each container
@@ -91,7 +91,7 @@ artContainer.classList.add(artGender);
       } else {
         artContainer.style.display = "none";
       }
-    });
+    });  
   });
   
 }
