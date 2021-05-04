@@ -68,9 +68,9 @@ function showArts() {
       artOrigin.classList.toggle("active");
     });
     // add genders as classes to each container
-    // var artGener = art.fields.genre;
-    // artGener.forEach(function (genre) {
-      artContainer.classList.add(genre);
+    var artGender = art.fields.genre;
+artContainer.classList.add(artGender);
+
     });
     //add event listener to our filter
     //to add an active class to our song
@@ -92,7 +92,7 @@ function showArts() {
         artContainer.style.display = "none";
       }
     });
-//   });
+  
 }
 
 
