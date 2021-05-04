@@ -71,7 +71,7 @@ function showArts() {
     var artGender = art.fields.genre;
 artContainer.classList.add(artGender);
 
-    });
+   // });
     //add event listener to our filter
     //to add an active class to our song
     //add event listener to our filter
@@ -92,6 +92,7 @@ artContainer.classList.add(artGender);
         artContainer.style.display = "none";
       }
     });
+  });
   
 }
 
