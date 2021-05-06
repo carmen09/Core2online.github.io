@@ -1,0 +1,69 @@
+body{
+    background-color: #424949 ;
+  }
+  
+  @font-face {
+    font-family: "NimbusSanLBol.otf";
+    src: url(./assets/nimbus/NimbusSanL-Bol.otf);
+  }
+  @font-face {
+    font-family: "AvenirNextLTPro-Regular";
+    src: url(./assets/AvenirNextLT/AvenirNextLTPro-Regular.otf);
+  }
+  @font-face {
+    font-family: "NimbusSanLReg.otf";
+    src: url(./assets/nimbus/NimbusSanLReg.otf);
+  }
+  
+  @font-face {
+    font-family: "AvenirNextLTProRegular.otf";
+    src: url(./assets/AvenirNextLT/AvenirNextLTProRegular.otf);
+  }
+  .carmen{
+    position:absolute;
+    bottom: 0;
+   width: 60%;
+   height: auto;
+   right: 20%;
+  }
+  .navbar{
+    font-size: 30px;
+    margin-top: 25px;
+   position: absolute;
+   right: 8%;
+  }
+  .navbar a {
+    display: block;
+    color: white;
+    font-family: "NimbusSanLReg.otf";
+    text-align: center;
+    text-decoration: none;
+  }
+  #right{
+    float: right;
+    margin-right: 130px;
+  
+  }
+  #left{
+  float: right;
+  margin-left: 0px;
+  
+  }
+  
+  .hello{
+    font-family: "NimbusSanLBol.otf";
+    color: white;
+    font-size: 180px;
+    position: absolute;
+    top: 30%;
+    right: 55%;
+  }
+  
+  .name{
+    font-family: "AvenirNextLTProRegular.otf";
+    color: white;
+    font-size: 110px;
+    position: absolute;
+    bottom:0%;
+    left: 55%;
+  }
