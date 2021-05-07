@@ -32,6 +32,10 @@ body{
     text-align: center;
     text-decoration: none;
   }
+  .navbar a.active{
+    color:#83288d ;
+    font-family: "NimbusSanLReg.otf";
+  }
   #right{
     float: right;
     margin-right: 130px;
@@ -196,74 +200,4 @@ body{
   
   
   
-  @media only screen and (max-width: 458px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr);
-      font-size: 30px;
-  }
-  .art-container{
-    -webkit-animation: art s infinite;
-    animation: art 4s infinite;
-  }
-    @-webkit-keyframes art {
-      0% {
-    
-        border: 5px solid orange;
-      
-      }
-      25% {
-    
-        border: 5px solid red;
-      }
-      50% {
-        
-        border: 5px solid yellow;
-    
-      }
-      75% {
-     
-        border: 5px solid orange;
-      
-      }
-      100% {
-       
-        border: 5px solid orange;
-      
-      }
-  }
-  .menu a {
-   
-    font-size: 40px;
-  }
-  .filter {
-    font-family: "pdark.ttf";
-    font-size: 40px;
-    color: #50bfe6;
-    text-shadow: 2px 2px #ffff66;
-  }
-  .lab-button{
-    position: fixed;
-    background-color: #b91567;
-    width: 200px;
-    text-align: center;
-    height: 100px;
-    border-radius: 50%;
-   
-  }
-  .studio-button{
-    position: fixed;
-    background-color: #b91567;
-    width: 300px;
-    text-align: center;
-    height: 100px;
-    border-radius: 50%;
   
-  }
-  .art-title{
-    font-size: 34px;
-  }
-  .art-origin {
-    font-size: 20px;
-  }
- 
-  }

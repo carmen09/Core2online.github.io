@@ -39,6 +39,10 @@ body{
   text-align: center;
   text-decoration: none;
 }
+.navbar a.active{
+  color:#83288d ;
+  font-family: "NimbusSanLReg.otf";
+}
 #right{
   float: right;
   margin-right: 130px;
