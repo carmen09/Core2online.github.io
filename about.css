@@ -118,7 +118,7 @@ body{
   .love{
 
     font-family: "NimbusSanLReg.otf";
-    font-size: 90px;
+    font-size: 80px;
     position: absolute;
   text-decoration: none;
   left: 2%;
@@ -162,7 +162,8 @@ body{
 .try{
 
   font-family: "NimbusSanLReg.otf";
-  font-size: 90px;
+  font-size: 80px;
+  left:4%;
   position: absolute;
 text-decoration: none;
 
